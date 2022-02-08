@@ -4,6 +4,7 @@
 
 .img-container {
   position: relative;
+  height: 400px;
 }
 
 .map-background {

@@ -31,7 +31,7 @@ function Map() {
         {/* inner text of <object> is alt text */}
         <object
           className="map-overlay"
-          data="/assets/Lobby_clickable.svg"
+          data="/assets/Lobby-clickable.svg"
           type="image/svg+xml"
         >
           placeholder image
