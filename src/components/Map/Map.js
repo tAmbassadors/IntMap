@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 import "./Map.css";
 
 function Map() {
-  // const [location, setLocation] = useState("");
+  // const [location, setLocation] = useState("Lobby");
   let birdEyeViewMap = document.getElementById("bev-map");
   let mapName = document.getElementById("map-name");
   let birdEyeViewSvg = document.getElementById("bev-svg");
@@ -28,11 +28,15 @@ function Map() {
   // }, [changeMap]);
 
   function changeMap(place) {
-    birdEyeViewMap.src = `${process.env.PUBLIC_URL}/assets/${place}.png`;
-    const mapSvg = `${process.env.PUBLIC_URL}/assets/${place}_clickable.svg`;
-    birdEyeViewSvg.data = mapSvg;
-    mapName.innerText = place;
+    if (place !== "") {
+      birdEyeViewMap.src = `${process.env.PUBLIC_URL}/assets/${place}.png`;
+      const mapSvg = `${process.env.PUBLIC_URL}/assets/${place}_clickable.svg`;
+      birdEyeViewSvg.data = mapSvg;
+      mapName.innerText = place;
+      console.log(place);
+    }
   }
+
   return (
     <div>
       <div id="map-name">Lobby</div>
