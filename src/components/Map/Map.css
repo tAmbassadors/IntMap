@@ -14,13 +14,13 @@
 }
 
 .map-background {
-  /* max-height: 400px; */
+  max-height: 400px;
   top: 0;
   left: 0;
 }
 
 .map-overlay {
-  /* max-height: 400px; */
+  max-height: 400px;
   position: absolute;
   top: 0;
   left: 0;

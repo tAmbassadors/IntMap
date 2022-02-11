@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 import "./Map.css";
 
 function Map() {
-  const [location, setLocation] = useState("");
+  // const [location, setLocation] = useState("");
   let birdEyeViewMap = document.getElementById("bev-map");
   let mapName = document.getElementById("map-name");
   let birdEyeViewSvg = document.getElementById("bev-svg");
@@ -15,18 +15,24 @@ function Map() {
   // svgMap.data = svgData;
 
   //Function toggles the birds eye view map and the title of the map
-  const changeMap = useCallback(() => {
-    birdEyeViewMap.src = `${process.env.PUBLIC_URL}/assets/${location}.png`;
-    const mapSvg = `${process.env.PUBLIC_URL}/assets/${location}_clickable.svg`;
+  // const changeMap = useCallback(() => {
+  //   birdEyeViewMap.src = `${process.env.PUBLIC_URL}/assets/${location}.png`;
+  //   const mapSvg = `${process.env.PUBLIC_URL}/assets/${location}_clickable.svg`;
+  //   birdEyeViewSvg.data = mapSvg;
+  //   mapName.innerText = location;
+  // }, [location, birdEyeViewMap, birdEyeViewSvg, mapName]);
+
+  // useEffect(() => {
+  //   console.log("caled");
+  //   changeMap();
+  // }, [changeMap]);
+
+  function changeMap(place) {
+    birdEyeViewMap.src = `${process.env.PUBLIC_URL}/assets/${place}.png`;
+    const mapSvg = `${process.env.PUBLIC_URL}/assets/${place}_clickable.svg`;
     birdEyeViewSvg.data = mapSvg;
-    mapName.innerText = location;
-  }, [location, birdEyeViewMap, birdEyeViewSvg, mapName]);
-
-  useEffect(() => {
-    console.log("caled");
-    changeMap();
-  }, [changeMap]);
-
+    mapName.innerText = place;
+  }
   return (
     <div>
       <div id="map-name">Lobby</div>
@@ -52,7 +58,8 @@ function Map() {
           className="btn-toggle"
           variant="outline-secondary"
           onClick={() => {
-            setLocation("Lobby");
+            // setLocation("Lobby");
+            changeMap("Lobby");
           }}
         >
           Lobby
@@ -61,7 +68,8 @@ function Map() {
           className="btn-toggle"
           variant="outline-secondary"
           onClick={() => {
-            setLocation("Lvl3");
+            // setLocation("Lvl3");
+            changeMap("Lvl3");
           }}
         >
           Level 3
@@ -70,7 +78,8 @@ function Map() {
           className="btn-toggle"
           variant="outline-secondary"
           onClick={() => {
-            setLocation("Lvl17");
+            // setLocation("Lvl17");
+            changeMap("Lvl17");
           }}
         >
           Level 17
@@ -79,7 +88,8 @@ function Map() {
           className="btn-toggle"
           variant="outline-secondary"
           onClick={() => {
-            setLocation("Learnlobe");
+            // setLocation("Learnlobe");
+            changeMap("Learnlobe");
           }}
         >
           Learn Lobe
