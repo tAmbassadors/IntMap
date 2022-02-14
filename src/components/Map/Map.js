@@ -9,9 +9,9 @@ function Map() {
 
   //location's lobby refers to still photo of lobby
   const [location, setLocation] = useState("lobby");
-  let birdEyeViewMap = document.getElementById("bev-map");
+  let mapDiv = document.getElementById("map-div");
   let mapName = document.getElementById("map-name");
-  let birdEyeViewSvg = document.getElementById("bev-svg");
+  // birdEyeViewMap.style.backgroundImage = `url("../../../public/assets/Lobby.png")`;
   // let svgMap = document.createElement("IMG");
   // svgMap.type = "image/svg+xml";
   // let bevMap = document.getElementById("bev-map");
@@ -33,29 +33,20 @@ function Map() {
   // }, [changeMap]);
 
   function changeMap(place) {
-    console.log(place);
     setMap(place);
-    // birdEyeViewMap.src = `${process.env.PUBLIC_URL}/assets/${place}.png`;
-    // const mapSvg = `${process.env.PUBLIC_URL}/assets/${place}_clickable.svg`;
-    // birdEyeViewSvg.data = mapSvg;
-    const mapBackground = `../../../public/assets/${place}.png`;
-
-    birdEyeViewMap.style.backgroundImage = `url(${process.env.PUBLIC_URL}/assets/${place}.png)`;
-    console.log("clicked");
-    console.log(mapBackground);
+    mapDiv.style.backgroundImage = `url(${process.env.PUBLIC_URL}/assets/${place}.png)`;
+    console.log("called changeMap");
     mapName.innerText = place;
+  }
+
+  function changeLocation(location) {
+    setLocation(location);
   }
 
   return (
     <div>
       <div id="map-name">Lobby</div>
-      <div id="bev-map" className="img-container">
-        {/* <img
-          id="bev-map"
-          src={`${process.env.PUBLIC_URL}/assets/Lobby.png`}
-          alt="Tembusu Lobby"
-          className="map-background"
-        /> */}
+      <div id="map-div" className="img-container">
         {/* inner text of <object> is alt text */}
         {/* <object
           id="bev-svg"
@@ -65,7 +56,7 @@ function Map() {
         >
           placeholder image
         </object> */}
-        <Svg map={map} location={location} />
+        <Svg id="map-overlay" map={map} location={location} />
       </div>
       <div>
         <Button
