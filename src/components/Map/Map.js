@@ -33,21 +33,23 @@ function Map() {
   // }, [changeMap]);
 
   function changeMap(place) {
-    console.log("test");
+    console.log(place);
     setMap(place);
-    if (place !== "") {
-      birdEyeViewMap.src = `${process.env.PUBLIC_URL}/assets/${place}.png`;
-      const mapSvg = `${process.env.PUBLIC_URL}/assets/${place}_clickable.svg`;
-      birdEyeViewSvg.data = mapSvg;
-      mapName.innerText = place;
-      console.log(place);
-    }
+    // birdEyeViewMap.src = `${process.env.PUBLIC_URL}/assets/${place}.png`;
+    // const mapSvg = `${process.env.PUBLIC_URL}/assets/${place}_clickable.svg`;
+    // birdEyeViewSvg.data = mapSvg;
+    const mapBackground = `../../../public/assets/${place}.png`;
+
+    birdEyeViewMap.style.backgroundImage = `url(${process.env.PUBLIC_URL}/assets/${place}.png)`;
+    console.log("clicked");
+    console.log(mapBackground);
+    mapName.innerText = place;
   }
 
   return (
     <div>
       <div id="map-name">Lobby</div>
-      <div className="img-container" style={{ border: "1px solid green" }}>
+      <div id="bev-map" className="img-container">
         {/* <img
           id="bev-map"
           src={`${process.env.PUBLIC_URL}/assets/Lobby.png`}
@@ -55,7 +57,6 @@ function Map() {
           className="map-background"
         /> */}
         {/* inner text of <object> is alt text */}
-        <p>help</p>
         {/* <object
           id="bev-svg"
           className="map-overlay"
@@ -66,7 +67,7 @@ function Map() {
         </object> */}
         <Svg map={map} location={location} />
       </div>
-      {/* <div>
+      <div>
         <Button
           className="btn-toggle"
           variant="outline-secondary"
@@ -107,7 +108,7 @@ function Map() {
         >
           Learn Lobe
         </Button>
-      </div> */}
+      </div>
     </div>
   );
 }

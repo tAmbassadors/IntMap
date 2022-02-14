@@ -160,8 +160,7 @@ function Svg(props) {
     </svg>
   );
   return (
-    <div style={{ border: "1px solid red", left: -10, top: -10 }}>
-      test
+    <div>
       {(() => {
         switch (map) {
           case "Lobby":
