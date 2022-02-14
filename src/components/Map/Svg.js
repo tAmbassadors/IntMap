@@ -1,7 +1,7 @@
 import "./Map.css";
 
 function Svg(props) {
-  const { map } = props;
+  const { map, changeLocation } = props;
   const lobby = (
     <svg
       id="Layer_2"
@@ -9,43 +9,60 @@ function Svg(props) {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1643.28 841.92"
     >
-      <a href="www.google.com" target="_blank">
+      <a href="javascript:void(0);" onClick={() => changeLocation("mph")}>
         <rect
           x="112.29"
           y="141.52"
           width="391.66"
           height="386.02"
-          style={{ fill: "rgb(235, 235, 235, 11)" }}
+          style={{ fill: "rgb(235, 235, 235, 0)" }}
         />
       </a>
-      <rect
-        x="723.86"
-        y="137.52"
-        width="118.41"
-        height="166.55"
-        style={{ fill: "rgb(235, 235, 235, 11)" }}
-      />
-      <rect
-        x="630.17"
-        y="308.07"
-        width="212.1"
-        height="167.86"
-        style={{ fill: "rgb(235, 235, 235, 11)" }}
-      />
-      <rect
-        x="112.29"
-        y="534.82"
-        width="391.66"
-        height="223.37"
-        style={{ fill: "rgb(235, 235, 235, 11)" }}
-      />
-      <rect
-        x="846.6"
-        y="252.72"
-        width="419.86"
-        height="221.2"
-        style={{ fill: "rgb(235, 235, 235, 11)" }}
-      />
+      <a
+        href="javascript:void(0);"
+        onClick={() => changeLocation("common-lounge")}
+      >
+        <rect
+          x="723.86"
+          y="137.52"
+          width="118.41"
+          height="166.55"
+          style={{ fill: "rgb(235, 235, 235, 0)" }}
+        />
+      </a>
+      <a href="javascript:void(0);" onClick={() => changeLocation("lobby")}>
+        <rect
+          x="630.17"
+          y="308.07"
+          width="212.1"
+          height="167.86"
+          style={{ fill: "rgb(235, 235, 235, 0)" }}
+        />
+      </a>
+      <a
+        href="javascript:void(0);"
+        onClick={() => changeLocation("drop-off-point")}
+      >
+        <rect
+          x="112.29"
+          y="534.82"
+          width="391.66"
+          height="223.37"
+          style={{ fill: "rgb(235, 235, 235, 0)" }}
+        />
+      </a>
+      <a
+        href="javascript:void(0);"
+        onClick={() => changeLocation("dining-hall")}
+      >
+        <rect
+          x="846.6"
+          y="252.72"
+          width="419.86"
+          height="221.2"
+          style={{ fill: "rgb(235, 235, 235, 0)" }}
+        />
+      </a>
     </svg>
   );
   const lvl3 = (

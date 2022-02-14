@@ -3,21 +3,14 @@ import { Button } from "react-bootstrap";
 import "./Map.css";
 import Svg from "./Svg.js";
 
-function Map() {
+function Map(props) {
+  const { location, changeLocation } = props;
+
   // map's Lobby refers to the bird eye view map of Lobby
   const [map, setMap] = useState("Lobby");
 
-  //location's lobby refers to still photo of lobby
-  const [location, setLocation] = useState("lobby");
   let mapDiv = document.getElementById("map-div");
   let mapName = document.getElementById("map-name");
-  // birdEyeViewMap.style.backgroundImage = `url("../../../public/assets/Lobby.png")`;
-  // let svgMap = document.createElement("IMG");
-  // svgMap.type = "image/svg+xml";
-  // let bevMap = document.getElementById("bev-map");
-  // bevMap.appendChild(svgMap);
-  // const svgData = "../../assets/yellow-box.svg";
-  // svgMap.data = svgData;
 
   // Function toggles the birds eye view map and the title of the map
   // const changeMap = useCallback(() => {
@@ -38,11 +31,6 @@ function Map() {
     console.log("called changeMap");
     mapName.innerText = place;
   }
-
-  function changeLocation(location) {
-    setLocation(location);
-  }
-
   return (
     <div>
       <div id="map-name">Lobby</div>
@@ -56,7 +44,7 @@ function Map() {
         >
           placeholder image
         </object> */}
-        <Svg id="map-overlay" map={map} location={location} />
+        <Svg id="map-overlay" map={map} changeLocation={changeLocation} />
       </div>
       <div>
         <Button

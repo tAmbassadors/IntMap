@@ -3,10 +3,14 @@ import Map from "../Map";
 import Tour from "../Tour";
 
 function IntMap() {
+  const [location, setLocation] = useState("");
+  function changeLocation(place) {
+    setLocation(place);
+  }
   return (
     <>
-      <Map />
-      <Tour />
+      <Map location={location} changeLocation={changeLocation} />
+      <Tour location={location} changeLocation={changeLocation} />
     </>
   );
 }
