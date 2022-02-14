@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <p>OH Interactive Map</p>
       <Map />
-      <Tour />
+      {/* <Tour /> */}
     </div>
   );
 }
