@@ -4,6 +4,9 @@
 
 .img-container {
   position: relative;
+}
+
+.bev-map-div {
   background-image: url("../../../public/assets/Lobby.png");
   background-size: contain;
   background-repeat: no-repeat;

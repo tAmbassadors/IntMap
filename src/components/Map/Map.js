@@ -34,7 +34,7 @@ function Map(props) {
   return (
     <div>
       <div id="map-name">Lobby</div>
-      <div id="map-div" className="img-container">
+      <div id="map-div" className="img-container bev-map-div">
         {/* inner text of <object> is alt text */}
         {/* <object
           id="bev-svg"
