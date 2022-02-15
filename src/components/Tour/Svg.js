@@ -452,6 +452,36 @@ function Svg(props) {
     </svg>
   );
 
+  const mistyGarden = (
+    <svg
+      id="Layer_2"
+      data-name="Layer 2"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 6016 4016"
+    >
+      <polygon
+        points="199.3 3513.61 910.64 3157.93 643.88 3513.61 910.64 3869.27 199.3 3513.61"
+        style="fill:#fff"
+      />
+      <a href="javascript:void(0);" onClick={() => changeLocation("mcl")}></a>
+    </svg>
+  );
+
+  const dropOffPoint = (
+    <svg
+      id="Layer_2"
+      data-name="Layer 2"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 6016 4016"
+    >
+      <polygon
+        points="5474.49 3157.93 5830.16 3869.27 5474.49 3602.51 5118.82 3869.27 5474.49 3157.93"
+        style="fill:#fff"
+      />
+      <a href="javascript:void(0);" onClick={() => changeLocation("lobby")}></a>
+    </svg>
+  );
+
   return (
     <div>
       {(() => {
@@ -496,6 +526,10 @@ function Svg(props) {
             return entrance;
           case "suite":
             return suite;
+          case "misty-garden":
+            return mistyGarden;
+          case "drop-off-point":
+            return dropOffPoint;
           default:
             return null;
         }
