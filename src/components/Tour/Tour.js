@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import "./Tour.css";
-import Svg from "./Svg";
+import Svg from "./Svg.js";
 
 export default function Tour(props) {
   const { location, changeLocation } = props;
