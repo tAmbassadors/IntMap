@@ -35,15 +35,6 @@ function Map(props) {
     <div>
       <div id="map-name">Lobby</div>
       <div id="map-div" className="img-container bev-map-div">
-        {/* inner text of <object> is alt text */}
-        {/* <object
-          id="bev-svg"
-          className="map-overlay"
-          data="/assets/Lobby_clickable.svg"
-          type="image/svg+xml"
-        >
-          placeholder image
-        </object> */}
         <Svg id="map-overlay" map={map} changeLocation={changeLocation} />
       </div>
       <div>
@@ -51,7 +42,6 @@ function Map(props) {
           className="btn-toggle"
           variant="outline-secondary"
           onClick={() => {
-            // setLocation("Lobby");
             changeMap("Lobby");
           }}
         >
@@ -61,7 +51,6 @@ function Map(props) {
           className="btn-toggle"
           variant="outline-secondary"
           onClick={() => {
-            // setLocation("Lvl3");
             changeMap("Lvl3");
           }}
         >
@@ -71,7 +60,6 @@ function Map(props) {
           className="btn-toggle"
           variant="outline-secondary"
           onClick={() => {
-            // setLocation("Lvl17");
             changeMap("Lvl17");
           }}
         >
@@ -81,7 +69,6 @@ function Map(props) {
           className="btn-toggle"
           variant="outline-secondary"
           onClick={() => {
-            // setLocation("Learnlobe");
             changeMap("Learnlobe");
           }}
         >
