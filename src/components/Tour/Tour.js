@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import "./Tour.css";
-import Svg from "./Svg";
+import Svg from "./Svg.js";
 
 export default function Tour(props) {
   const { location, changeLocation } = props;
@@ -26,7 +26,11 @@ export default function Tour(props) {
         <Button variant="primary" className="left-button" onClick>
           Previous
         </Button> */}
-        <Svg location={location} changeLocation={changeLocation} />
+        <Svg
+          id="map-overlay"
+          location={location}
+          changeLocation={changeLocation}
+        />
       </div>
     </div>
   );
