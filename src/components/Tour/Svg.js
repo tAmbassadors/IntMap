@@ -1,3 +1,5 @@
+import "./Tour.css";
+
 function Svg(props) {
   const { location, changeLocation } = props;
   const boxOffice = (
@@ -484,52 +486,53 @@ function Svg(props) {
 
   return (
     <div>
+      test
       {(() => {
         switch (location) {
           case "box-office":
             return boxOffice;
           case "common-lounge":
             return commonLounge;
-          case "dining-hall":
-            return diningHall;
-          case "level-lounge":
-            return levelLounge;
-          case "launchpad":
-            return launchpad;
-          case "laundry":
-            return laundry;
-          case "mcl":
-            return mcl;
-          case "oasis":
-            return oasis;
-          case "reading-room":
-            return readingRoom;
-          case "room":
-            return room;
-          case "sem-room":
-            return semRoom;
-          case "abbey":
-            return abbey;
-          case "learnlobe-b1":
-            return learnlobeB1;
-          case "learnlobe-b1-choice":
-            return learnlobeB1Choice;
-          case "learnlobe-l1":
-            return learnlobeL1;
-          case "learnlobe-walkway":
-            return learnlobeWalkway;
-          case "corridor":
-            return corridor;
-          case "lobby":
-            return lobby;
-          case "entrance":
-            return entrance;
-          case "suite":
-            return suite;
-          case "misty-garden":
-            return mistyGarden;
-          case "drop-off-point":
-            return dropOffPoint;
+          // case "dining-hall":
+          //   return diningHall;
+          // case "level-lounge":
+          //   return levelLounge;
+          // case "launchpad":
+          //   return launchpad;
+          // case "laundry":
+          //   return laundry;
+          // case "mcl":
+          //   return mcl;
+          // case "oasis":
+          //   return oasis;
+          // case "reading-room":
+          //   return readingRoom;
+          // case "room":
+          //   return room;
+          // case "sem-room":
+          //   return semRoom;
+          // case "abbey":
+          //   return abbey;
+          // case "learnlobe-b1":
+          //   return learnlobeB1;
+          // case "learnlobe-b1-choice":
+          //   return learnlobeB1Choice;
+          // case "learnlobe-l1":
+          //   return learnlobeL1;
+          // case "learnlobe-walkway":
+          //   return learnlobeWalkway;
+          // case "corridor":
+          //   return corridor;
+          // case "lobby":
+          //   return lobby;
+          // case "entrance":
+          //   return entrance;
+          // case "suite":
+          //   return suite;
+          // case "misty-garden":
+          //   return mistyGarden;
+          // case "drop-off-point":
+          //   return dropOffPoint;
           default:
             return null;
         }
