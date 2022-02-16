@@ -2,12 +2,14 @@
   position: relative;
   width: 50%;
   left: 25%;
+  /* height: "400px"; */
 }
 
 .tour-div {
   background-image: url("../../../public/assets/tour-img/lobby.JPG");
   background-size: contain;
   background-repeat: no-repeat;
+  /* height: "400px"; */
 }
 
 .img-container img {
@@ -39,4 +41,9 @@
   border: none;
   cursor: pointer;
   border-radius: 5px;
+}
+
+Rect,
+Polygon {
+  cursor: pointer;
 }
