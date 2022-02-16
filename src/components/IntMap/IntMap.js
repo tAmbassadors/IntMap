@@ -3,7 +3,7 @@ import Map from "../Map";
 import Tour from "../Tour";
 
 function IntMap() {
-  const [location, setLocation] = useState("lobby");
+  const [location, setLocation] = useState("box-office");
   function changeLocation(place) {
     setLocation(place);
   }
