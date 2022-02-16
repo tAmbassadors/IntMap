@@ -15,7 +15,7 @@ function Svg(props) {
       >
         <polygon
           points="2378.39 1420.35 2067.55 1575.77 2184.12 1420.35 2067.55 1264.93 2378.39 1420.35"
-          style={{ fill: "rgb(235, 235, 235, 0)" }}
+          style={{ fill: "rgb(255, 255, 255, 1)" }}
         />
       </a>
     </svg>
@@ -37,7 +37,7 @@ function Svg(props) {
       <a href="javascript:void(0);" onClick={() => changeLocation("lobby")}>
         <polygon
           points="4329.56 3885.28 4036.16 3298.47 4329.56 3518.54 4622.96 3298.47 4329.56 3885.28"
-          style={{ fill: "rgb(235, 235, 235, 0)" }}
+          style={{ fill: "rgb(255, 255, 255, 1)" }}
         />
       </a>
     </svg>
@@ -53,7 +53,7 @@ function Svg(props) {
       <a href="javascript:void(0);" onClick={() => changeLocation("corridor")}>
         <polygon
           points="917.32 1576.89 771.02 1284.29 917.32 1394.02 1063.62 1284.29 917.32 1576.89"
-          style={{ fill: "rgb(235, 235, 235, 0)" }}
+          style={{ fill: "rgb(255, 255, 255, 1)" }}
         />
       </a>
     </svg>
@@ -495,7 +495,6 @@ function Svg(props) {
 
   return (
     <div>
-      location is {location}
       {(() => {
         switch (location) {
           case "box-office":
@@ -504,10 +503,9 @@ function Svg(props) {
             return commonLounge;
           case "dining-hall":
             return diningHall;
-          case "level-lounge":
+          case "level-lounge-1":
             return levelLounge;
-            {
-              /* case "launchpad":
+          /*case "launchpad":
             return launchpad;
           case "laundry":
             return laundry;
@@ -542,8 +540,8 @@ function Svg(props) {
           case "misty-garden":
             return mistyGarden;
           case "drop-off-point":
-            return dropOffPoint; */
-            }
+            return dropOffPoint;*/
+
           default:
             return null;
         }
