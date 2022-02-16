@@ -9,6 +9,7 @@ function IntMap() {
   }
   return (
     <>
+      <div>Tembusu College Virtual Tour</div>
       <Map location={location} changeLocation={changeLocation} />
       <Tour location={location} changeLocation={changeLocation} />
     </>

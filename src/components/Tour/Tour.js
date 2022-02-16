@@ -21,30 +21,20 @@ export default function Tour(props) {
     if (roomDescriptions[location]) {
       tourDesc.innerText = roomDescriptions[location];
     } else {
-      tourDesc.innerText = "placeholder";
+      tourDesc.innerText = "Welcome to Tembusu College!";
     }
   }, [location]);
 
   return (
     <div>
-      <div>
-        <p1>Tour</p1>
-      </div>
       <div
-        // className="justiry-content-center"
-        style={{ border: "1px solid red" }}
+      // className="justiry-content-center"
       >
         <div
           id="tour-div"
           className="img-container tour-div"
-          style={{ border: "1px solid red" }}
           // class="col-sm-8"
         >
-          {/* <img
-          id="tour-img"
-          src={`${process.env.PUBLIC_URL}/assets/tour-img/${location}.jpg`}
-          alt="Tembusu Lobby"
-        /> */}
           <Svg
             id="map-overlay"
             location={location}
@@ -52,7 +42,7 @@ export default function Tour(props) {
           />
         </div>
         <div>
-          <p id="location-name">{roomNames["learnlobe-walkway-l1-2"]}</p>
+          <p id="location-name">lobby</p>
           <p id="location-description">
             This is the main lobby of the Residential Building, where Tembusians
             often meet up before heading off for meals, lessons or other

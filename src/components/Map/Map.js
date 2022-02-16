@@ -32,7 +32,7 @@ function Map(props) {
     mapName.innerText = place;
   }
   return (
-    <div>
+    <div className="component-container">
       <div id="map-name">Lobby</div>
       <div id="map-div" className="img-container bev-map-div">
         <Svg id="map-overlay" map={map} changeLocation={changeLocation} />
