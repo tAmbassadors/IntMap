@@ -19,18 +19,12 @@ function Svg(props) {
         placement="top"
         delay={{ show: 250, hide: 200 }}
         overlay={<Tooltip>corridor</Tooltip>}
-        // onClick={() => changeLocation("learnlobe-walkway-l1-2")}
       >
-        {/* <a
-          href="javascript:void(0);"
-          // onClick={() => changeLocation("learnlobe-walkway-l1-2")}
-        > */}
         <polygon
           points="2378.39 1420.35 2067.55 1575.77 2184.12 1420.35 2067.55 1264.93 2378.39 1420.35"
           style={{ fill: "rgb(255, 255, 255, 1)" }}
           onClick={() => changeLocation("learnlobe-walkway-l1-2")}
         />
-        {/* </a> */}
       </OverlayTrigger>
     </svg>
   );
@@ -43,13 +37,17 @@ function Svg(props) {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 576 324"
     >
-      {/* <a href="javascript:void(0);" onClick={() => changeLocation("lobby")}> */}
-      <polygon
-        points="532.19 306.94 502.04 246.63 532.19 269.25 562.35 246.63 532.19 306.94"
-        style={{ fill: "rgb(255, 255, 255, 1)" }}
-        onClick={() => changeLocation("lobby")}
-      />
-      {/* </a> */}
+      <OverlayTrigger
+        placement="top"
+        delay={{ show: 250, hide: 200 }}
+        overlay={<Tooltip>can insert any text here</Tooltip>}
+      >
+        <polygon
+          points="532.19 306.94 502.04 246.63 532.19 269.25 562.35 246.63 532.19 306.94"
+          style={{ fill: "rgb(255, 255, 255, 1)" }}
+          onClick={() => changeLocation("lobby")}
+        />
+      </OverlayTrigger>
     </svg>
   );
 
@@ -60,15 +58,17 @@ function Svg(props) {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 6016 4016"
     >
-      <a
-        href="javascript:void(0);"
-        onClick={() => changeLocation("box-office")}
+      <OverlayTrigger
+        placement="top"
+        delay={{ show: 250, hide: 200 }}
+        overlay={<Tooltip>can insert any text here</Tooltip>}
       >
         <polygon
           points="4329.56 3885.28 4036.16 3298.47 4329.56 3518.54 4622.96 3298.47 4329.56 3885.28"
           style={{ fill: "rgb(255, 255, 255, 1)" }}
+          onClick={() => changeLocation("box-office")}
         />
-      </a>
+      </OverlayTrigger>
     </svg>
   );
 
@@ -79,12 +79,17 @@ function Svg(props) {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 2476.8 1651.2"
     >
-      <a href="javascript:void(0);" onClick={() => changeLocation("corridor")}>
+      <OverlayTrigger
+        placement="top"
+        delay={{ show: 250, hide: 200 }}
+        overlay={<Tooltip>can insert any text here</Tooltip>}
+      >
         <polygon
           points="917.32 1576.89 771.02 1284.29 917.32 1394.02 1063.62 1284.29 917.32 1576.89"
           style={{ fill: "rgb(255, 255, 255, 1)" }}
+          onClick={() => changeLocation("corridor")}
         />
-      </a>
+      </OverlayTrigger>
     </svg>
   );
 
