@@ -3,12 +3,13 @@ import Map from "../Map";
 import Tour from "../Tour";
 
 function IntMap() {
-  const [location, setLocation] = useState("box-office");
+  const [location, setLocation] = useState("lobby");
   function changeLocation(place) {
     setLocation(place);
   }
   return (
     <>
+      <div>Tembusu College Virtual Tour</div>
       <Map location={location} changeLocation={changeLocation} />
       <Tour location={location} changeLocation={changeLocation} />
     </>
