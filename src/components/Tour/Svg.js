@@ -339,7 +339,7 @@ function Svg(props) {
         overlay={<Tooltip>Learn Lobe B1 Entrance</Tooltip>}
       >
         <polygon
-          points="1270.51 837.01 1155.05 894.74 1198.35 837.01 1155.05 779.28 1270.51 837.01"
+          points="921.88 1165.76 838.71 999.42 921.88 1061.8 1005.05 999.42 921.88 1165.76"
           style={{ fill: "rgb(255, 255, 255, 1)" }}
           onClick={() => changeLocation("learnlobe-walkway-B1")}
         />
@@ -435,6 +435,17 @@ function Svg(props) {
             points="579.56 965 732.79 888.39 675.33 965 732.79 1041.62 579.56 965"
             style={{ fill: "rgb(255, 255, 255, 1)" }}
             onClick={() => changeLocation("oasis")}
+          />
+        </OverlayTrigger>
+        <OverlayTrigger
+          placement="top"
+          delay={{ show: 250, hide: 200 }}
+          overlay={<Tooltip>Back to Learn Lobe Entrance</Tooltip>}
+        >
+          <polygon
+            points="964.26 1173.15 1041.17 1019.32 964.26 1077.01 887.34 1019.32 964.26 1173.15"
+            style={{ fill: "rgb(255, 255, 255, 1)" }}
+            onClick={() => changeLocation("learnlobe-walkway-l1")}
           />
         </OverlayTrigger>
       </g>
