@@ -34,11 +34,11 @@ export const roomDescriptions = {
   "sem-room":
     "Seminar Rooms are a key feature of the Learn Lobe - they form the environment in which learning takes flight! One can look forward to both Junior (JS) and Senior Seminars (SS) as well as Ideas and Exposition Modules (IEMs) being held in these classrooms. Many Tembusians can vouch for the riveting modules they have attended under the University Town College Programme. In addition to the interesting topics that the modules at Tembusu explore, Seminar Rooms offer an intimate learning environment where you’ll be able to have lively class discussions with your peers. Furthermore, if you’re looking for a conducive space to get some work done or to run student activities, our Seminar Rooms can be booked for such purposes as well!",
   "reading-room":
-    "Curated by our Tembusu Rector and Fellows, the Reading Room is home to a collection of books for students to discover and expand their reading repertoire. It is also the dynamic space where Tembusu College holds Master’s and Student’s Teas. ",
+    "Curated by our Tembusu Rector and Fellows, the Reading Room is home to a collection of books for students to discover and expand their reading repertoire. It is also the dynamic space where Tembusu College holds its Student’s Teas. ",
   abbey:
     "If you love music, you’re at the right place! The Abbey is Tembusu’s very own music studio. Equipped with state-of-the-art sound systems and instruments, the stage is set for you and like-minded musicians to jam and have fun!",
   "box-office":
-    "Whether you are a lover of coffee, film buff, or simply looking for a space to chill, The Box Office has got you covered! Not only is it Tembusu’s own home cinema, it is also a place where you can play games, relax  and bond over making coffee. ",
+    "Whether you are a coffee lover, film buff, or simply looking for a space to chill, The Box Office has got you covered! Not only is it Tembusu’s own home cinema, it is also a place where you can play games, relax  and bond over making coffee. ",
   oasis:
     "The Oasis is a safe space for you to take a breather from the daily stresses of life. With mental health and emotional wellbeing at the heart of The Oasis, take the opportunity to retreat and recharge, be it alone or alongside peers and dear friends. ",
   "blank-canvas":
@@ -64,7 +64,7 @@ export const roomDescriptions = {
   "common-lounge":
     "The Common Lounge is a space used by our students for a myriad of purposes. Social gatherings, discussions, study sessions, Student's Teas and House events or dinners are just some of the many activities that take place here. Furnished with a piano and pool table, the Common Lounge is definitely the place to be for those looking to bond over some fun activities!",
   "misty-garden":
-    "A lovely garden located at Level 3, the Misty Garden (named after the inaugural Tembusu Master’s cat) represents Tembusu’s commitment to biodiversity, the natural environment and sustainability. Tembusu Urban Farmers is one student group reflective of such ethos - and they’re the team which helps tend to this garden!",
+    "A lovely garden located at Level 3, the Misty Garden (named after the inaugural Tembusu Master’s cat) represents Tembusu’s commitment to biodiversity, the natural environment and sustainability. Tembusu Urban Farmers is one student group reflective of such an ethos - and they’re the team which helps tend to this garden!",
   mcl: "The Master’s Common Lounge is a cozy room located on the 3rd floor of Tembusu College. Master's Teas are hosted by the College Master in this space, whereby both local and international guests are invited to share their work, views, and life experiences with students. These sessions open the possibility for students to meet, mingle and expand one’s perspective through an informal, small-group setting.",
   "level-lounge":
     "Tired after a long day but not ready to head to bed just yet? No worries! Each level has a Level Lounge where you can study or unwind with your friendly neighbours. Here’s a fun fact: Our houses are named after endangered Asian animal species, to represent the College’s appreciation and concern for biodiversity and conservation. The 5 houses are: Shan (Snow Leopard), Ora (Komodo Dragon), Gaja (Asian Elephant), Tancho (Red-Crowned Crane) and Ponya (Red Panda).",
