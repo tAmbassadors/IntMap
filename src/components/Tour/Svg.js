@@ -698,6 +698,69 @@ function Svg(props) {
     </svg>
   );
 
+  const mph = (
+    <svg
+      id="Layer_2"
+      data-name="Layer 2"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 6000 4000"
+    >
+      <OverlayTrigger
+        placement="top"
+        delay={{ show: 250, hide: 200 }}
+        overlay={<Tooltip>Back to Tembusu Entrance</Tooltip>}
+      >
+        <polygon
+          points="5791.53 2032.02 5329.34 2263.11 5502.67 2032.02 5329.34 1800.92 5791.53 2032.02"
+          style={{ fill: "rgb(255, 255, 255, 1)" }}
+          onClick={() => changeLocation("entrance")}
+        />
+      </OverlayTrigger>
+    </svg>
+  );
+
+  const pantry = (
+    <svg
+      id="Layer_2"
+      data-name="Layer 2"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 6016 4016"
+    >
+      <OverlayTrigger
+        placement="top"
+        delay={{ show: 250, hide: 200 }}
+        overlay={<Tooltip>Back to Corridor</Tooltip>}
+      >
+        <polygon
+          points="4121.98 3788.55 3839.99 3224.56 4121.98 3436.07 4403.98 3224.56 4121.98 3788.55"
+          style={{ fill: "rgb(255, 255, 255, 1)" }}
+          onClick={() => changeLocation("corridor")}
+        />
+      </OverlayTrigger>
+    </svg>
+  );
+
+  const blankCanvas = (
+    <svg
+      id="Layer_1"
+      data-name="Layer 1"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 8256 5504"
+    >
+      <OverlayTrigger
+        placement="top"
+        delay={{ show: 250, hide: 200 }}
+        overlay={<Tooltip>Back to Learn Lobe B1</Tooltip>}
+      >
+        <polygon
+          points="5955.61 5201.29 5662.2 4614.48 5955.61 4834.55 6249.01 4614.48 5955.61 5201.29"
+          style={{ fill: "rgb(255, 255, 255, 1)" }}
+          onClick={() => changeLocation("learnlobe-walkway-B1-2")}
+        />
+      </OverlayTrigger>
+    </svg>
+  );
+
   return (
     <div>
       {(() => {
@@ -748,7 +811,12 @@ function Svg(props) {
             return mistyGarden;
           case "drop-off-point":
             return dropOffPoint;
-
+          case "mph":
+            return mph;
+          case "pantry":
+            return pantry;
+          case "blank-canvas":
+            return blankCanvas;
           default:
             return null;
         }
