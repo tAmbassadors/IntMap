@@ -66,28 +66,25 @@ function Svg(props) {
     </svg>
   );
   const lvl3 = (
-    <svg
-      id="Layer_2"
-      data-name="Layer 2"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 824.4 580.8"
-    >
-      <a
-        href="javascript:void(0);"
-        onClick={() => changeLocation("misty-garden")}
+    <>
+      <svg
+        id="Layer_2"
+        data-name="Layer 2"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 2068.08 1484.4"
       >
         <polygon
-          points="88.65 78.29 505.9 78.29 505.9 336.8 336.75 336.8 336.75 207.54 88.65 207.54 88.65 78.29"
+          points="95.55 177.66 1252.75 177.66 1252.75 892.46 782.64 892.46 784.36 535.06 95.55 535.06 95.55 177.66"
           style={{ fill: "rgb(235, 235, 235, 0)" }}
+          onClick={() => changeLocation("misty-garden")}
         />
-      </a>
-      <a href="javascript:void(0);" onClick={() => changeLocation("mcl")}>
         <polygon
-          points="507.37 78.29 746.14 78.29 746.14 407.49 610.17 407.49 610.17 335.93 507.37 335.93 507.37 78.29"
+          points="1934.58 177.66 1934.58 1098.05 1559.84 1098.05 1559.84 888.71 1271.84 886.98 1271.84 177.66 1934.58 177.66"
           style={{ fill: "rgb(235, 235, 235, 0)" }}
+          onClick={() => changeLocation("mcl")}
         />
-      </a>
-    </svg>
+      </svg>
+    </>
   );
 
   const lvl17 = (
@@ -95,44 +92,45 @@ function Svg(props) {
       id="Layer_2"
       data-name="Layer 2"
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 842.16 541.44"
+      viewBox="0 0 2067.84 1484.4"
     >
-      <a href="javascript:void(0);" onClick={() => changeLocation("pantry")}>
-        <rect
-          x="157.67"
-          y="160.35"
-          width="34.7"
-          height="60.29"
-          style={{ fill: "rgb(235, 235, 235, 0)" }}
-        />
-      </a>
-      <a
-        href="javascript:void(0);"
+      <rect
+        x="225.9"
+        y="1150.1"
+        width="102.36"
+        height="176.96"
+        style={{ fill: "rgb(235, 235, 235, 0)" }}
+        onClick={() => changeLocation("room-1")}
+      />
+      <rect
+        x="1353.61"
+        y="900.27"
+        width="208.19"
+        height="171.76"
+        style={{ fill: "rgb(235, 235, 235, 0)" }}
+        onClick={() => changeLocation("laundry")}
+      />
+      <rect
+        x="781.52"
+        y="466.53"
+        width="252.4"
+        height="213.83"
+        style={{ fill: "rgb(235, 235, 235, 0)" }}
         onClick={() => changeLocation("level-lounge-1")}
-      >
-        <rect
-          x="341.58"
-          y="179.43"
-          width="83.71"
-          height="70.7"
-          style={{ fill: "rgb(235, 235, 235, 0)" }}
-        />
-      </a>
-      <a href="javascript:void(0);" onClick={() => changeLocation("suite")}>
-        <polygon
-          points="212.76 322.57 264.37 322.57 264.37 383.72 285.19 383.72 285.19 403.24 121.67 403.24 121.67 382.42 213.63 382.42 212.76 322.57"
-          style={{ fill: "rgb(235, 235, 235, 0)" }}
-        />
-      </a>
-      <a href="javascript:void(0);" onClick={() => changeLocation("laundry")}>
-        <rect
-          x="531.99"
-          y="322.57"
-          width="69.4"
-          height="57.69"
-          style={{ fill: "rgb(235, 235, 235, 0)" }}
-        />
-      </a>
+      />
+      <rect
+        x="225.9"
+        y="414.22"
+        width="102.36"
+        height="173.49"
+        style={{ fill: "rgb(235, 235, 235, 0)" }}
+        onClick={() => changeLocation("pantry")}
+      />
+      <polygon
+        points="388.25 899.26 545.7 899.26 545.7 1077.53 610.76 1077.53 610.76 1149.1 116.3 1149.1 116.3 1080.13 388.25 1078.83 388.25 899.26"
+        style={{ fill: "rgb(235, 235, 235, 0)" }}
+        onClick={() => changeLocation("suite")}
+      />
     </svg>
   );
 
@@ -143,78 +141,62 @@ function Svg(props) {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1146.96 657.36"
     >
-      <a href="javascript:void(0);" onClick={() => changeLocation("abbey")}>
-        <rect
-          x="83"
-          y="164.54"
-          width="136"
-          height="170"
-          style={{ fill: "rgb(235, 235, 235, 0)" }}
-        />
-      </a>
-      <a
-        href="javascript:void(0);"
+      <rect
+        x="83"
+        y="164.54"
+        width="136"
+        height="170"
+        style={{ fill: "rgb(235, 235, 235, 0)" }}
+        onClick={() => changeLocation("abbey")}
+      />
+      <rect
+        x="285.81"
+        y="164.54"
+        width="136"
+        height="170"
+        style={{ fill: "rgb(235, 235, 235, 0)" }}
         onClick={() => changeLocation("blank-canvas")}
-      >
-        <rect
-          x="285.81"
-          y="164.54"
-          width="136"
-          height="170"
-          style={{ fill: "rgb(235, 235, 235, 0)" }}
-        />
-      </a>
-      <a href="javascript:void(0);" onClick={() => changeLocation("launchpad")}>
-        <rect
-          x="425.04"
-          y="164.54"
-          width="136"
-          height="170"
-          style={{ fill: "rgb(235, 235, 235, 0)" }}
-        />
-      </a>
-      <a href="javascript:void(0);" onClick={() => changeLocation("oasis")}>
-        <rect
-          x="803.04"
-          y="164.54"
-          width="136"
-          height="170"
-          style={{ fill: "rgb(235, 235, 235, 0)" }}
-        />
-      </a>
-      <a
-        href="javascript:void(0);"
+      />
+      <rect
+        x="425.04"
+        y="164.54"
+        width="136"
+        height="170"
+        style={{ fill: "rgb(235, 235, 235, 0)" }}
+        onClick={() => changeLocation("launchpad")}
+      />
+      <rect
+        x="803.04"
+        y="164.54"
+        width="136"
+        height="170"
+        style={{ fill: "rgb(235, 235, 235, 0)" }}
+        onClick={() => changeLocation("oasis")}
+      />
+      <rect
+        x="942.94"
+        y="164.54"
+        width="136"
+        height="170"
+        style={{ fill: "rgb(235, 235, 235, 0)" }}
         onClick={() => changeLocation("box-office")}
-      >
-        <rect
-          x="942.94"
-          y="164.54"
-          width="136"
-          height="170"
-          style={{ fill: "rgb(235, 235, 235, 0)" }}
-        />
-      </a>
-      <a href="javascript:void(0);" onClick={() => changeLocation("sem-room")}>
-        <rect
-          x="942.94"
-          y="372.88"
-          width="136"
-          height="170"
-          style={{ fill: "rgb(235, 235, 235, 0)" }}
-        />
-      </a>
-      <a
-        href="javascript:void(0);"
+      />
+      <rect
+        x="942.94"
+        y="372.88"
+        width="136"
+        height="170"
+        style={{ fill: "rgb(235, 235, 235, 0)" }}
+        onClick={() => changeLocation("sem-room")}
+      />
+      <rect
+        x="148.84"
+        y="374.23"
+        width="273.93"
+        height="170"
+        style={{ fill: "rgb(235, 235, 235, 0)" }}
         onClick={() => changeLocation("reading-room")}
-      >
-        <rect
-          x="148.84"
-          y="374.23"
-          width="273.93"
-          height="170"
-          style={{ fill: "rgb(235, 235, 235, 0)" }}
-        />
-      </a>
+      />
     </svg>
   );
   return (
