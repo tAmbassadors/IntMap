@@ -36,12 +36,14 @@ export default function Tour(props) {
     return (
         <Container>
             <Row>
-                <Col id="tour-div" className="img-container tour-div">
-                    <Svg id="map-overlay"
-                        location={location}
-                        changeLocation={changeLocation}/>
+                <Col lg="8">
+                    <div id="tour-div" className="img-container tour-div">
+                        <Svg id="map-overlay"
+                            location={location}
+                            changeLocation={changeLocation}/>
+                    </div>
                 </Col>
-                <Col>
+                <Col className="description-container">
                     <p id="location-name">lobby</p>
                     <p id="location-description">
                         This is the main lobby of the Residential Building, where Tembusians often meet up before heading off for meals, lessons or other activities!

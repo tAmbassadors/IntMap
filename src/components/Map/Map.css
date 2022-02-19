@@ -7,7 +7,6 @@
 }
 .img-container {
   position: relative;
-  border: 1px solid red;
 }
 
 .bev-map-div {
@@ -33,4 +32,19 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.description-container {
+  margin: 1vh;
+}
+
+#location-name {
+  font-size: clamp(30px, 4vw, 40px);
+  font-weight: 700;
+  margin: 20px 0px;
+}
+
+#location-description {
+  font-size: 18px;
+  font-weight: 400;
 }
