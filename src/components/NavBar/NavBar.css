@@ -1,0 +1,9 @@
+.navbar-logo {
+    width: 40vw;
+    max-width: 250px;
+}
+
+.navbar-button {
+    padding: 1vh 3vw;
+    font-size: clamp(14px, 2vw, 16px);
+}

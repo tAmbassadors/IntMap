@@ -1,0 +1,12 @@
+.footer {
+    background-color: black;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.footer p {
+    font-size: clamp(14px, 4vw, 16px);
+    font-weight: 300;
+    margin-bottom: 0px;
+    color: white;
+}
