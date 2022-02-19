@@ -4,7 +4,9 @@ import "./NavBar.css";
 
 export default function NavBar() {
     return (
-        <Navbar>
+        <Navbar style={
+            {backgroundColor: "white"}
+        }>
             <Container>
                 <Navbar.Brand href="#home">
                     <img alt=""

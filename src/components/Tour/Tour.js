@@ -30,7 +30,13 @@ export default function Tour(props) {
     return (
         <Container className="tour-container">
             <Row>
-                <Col lg="8">
+                <Col lg="8"
+                    style={
+                        {
+                            paddingLeft: "0px",
+                            paddingRight: "0px"
+                        }
+                }>
                     <div id="tour-div" className="img-container tour-div">
                         <Svg id="map-overlay"
                             location={location}
