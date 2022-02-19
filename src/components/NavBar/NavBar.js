@@ -17,7 +17,7 @@ export default function NavBar() {
                 </Navbar.Brand>
                 <Navbar.Toggle/>
                 <Navbar.Collapse className="justify-content-end">
-                    <Button variant="outline-success" className="navbar-button">
+                    <Button variant="outline-success" className="navbar-button" size="sm">
                         Visit College Website
                     </Button>
                 </Navbar.Collapse>
