@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useCallback} from "react";
-import {Button} from "react-bootstrap";
+import {Button, Row, Col} from "react-bootstrap";
 import "./Map.css";
 import Svg from "./Svg.js";
 
@@ -37,46 +37,50 @@ function Map(props) {
     }
     return (
         <div className="component-container">
-            <div id="map-name">Lobby</div>
-            <div id="map-div" className="img-container bev-map-div">
-                <Svg id="map-overlay"
-                    map={map}
-                    changeLocation={changeLocation}/>
-            </div>
-            <div>
-                <Button className="btn-toggle" variant="outline-secondary"
-                    onClick={
-                        () => {
-                            changeMap("Lobby");
-                        }
-                }>
-                    Lobby
-                </Button>
-                <Button className="btn-toggle" variant="outline-secondary"
-                    onClick={
-                        () => {
-                            changeMap("Lvl3");
-                        }
-                }>
-                    Level 3
-                </Button>
-                <Button className="btn-toggle" variant="outline-secondary"
-                    onClick={
-                        () => {
-                            changeMap("Lvl17");
-                        }
-                }>
-                    Level 17
-                </Button>
-                <Button className="btn-toggle" variant="outline-secondary"
-                    onClick={
-                        () => {
-                            changeMap("Learnlobe");
-                        }
-                }>
-                    Learn Lobe
-                </Button>
-            </div>
+            <Row id="map-name" className="justify-content-center">Lobby</Row>
+            <Row id="map-div" className="img-container bev-map-div justify-content-center">
+                <Col lg="6">
+                    <Svg id="map-overlay"
+                        map={map}
+                        changeLocation={changeLocation}/>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <Button className="btn-toggle" variant="outline-secondary"
+                        onClick={
+                            () => {
+                                changeMap("Lobby");
+                            }
+                    }>
+                        Lobby
+                    </Button>
+                    <Button className="btn-toggle" variant="outline-secondary"
+                        onClick={
+                            () => {
+                                changeMap("Lvl3");
+                            }
+                    }>
+                        Level 3
+                    </Button>
+                    <Button className="btn-toggle" variant="outline-secondary"
+                        onClick={
+                            () => {
+                                changeMap("Lvl17");
+                            }
+                    }>
+                        Level 17
+                    </Button>
+                    <Button className="btn-toggle" variant="outline-secondary"
+                        onClick={
+                            () => {
+                                changeMap("Learnlobe");
+                            }
+                    }>
+                        Learn Lobe
+                    </Button>
+                </Col>
+            </Row>
         </div>
     );
 }

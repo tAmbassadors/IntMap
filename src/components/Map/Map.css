@@ -50,3 +50,8 @@
   font-weight: 400;
   color: #3C5447;
 }
+
+#map-name {
+  font-size: 24px;
+  font-weight: 500;
+}
