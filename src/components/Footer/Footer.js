@@ -13,7 +13,7 @@ export default function Footer() {
         <>
             <Navbar className="footer">
                 <Container>
-                    <p>Made by Tembusu Ambassador</p>
+                    <p>Made by Tembusu Ambassadors</p>
                 </Container>
             </Navbar>
         </>
