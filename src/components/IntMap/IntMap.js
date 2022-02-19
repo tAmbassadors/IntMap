@@ -10,6 +10,7 @@ import {
 import Map from "../Map";
 import Tour from "../Tour";
 import Footer from "../Footer"
+import NavBar from "../NavBar"
 import "./IntMap.css";
 
 function IntMap() {
@@ -18,15 +19,20 @@ function IntMap() {
         setLocation(place);
     }
     return (
-        <Container>
-            <div className="title">Tembusu College Interactive Map</div>
-            <Map location={location}
-                changeLocation={changeLocation}/>
-            <br/>
-            <Tour location={location}
-                changeLocation={changeLocation}/>
-            <Footer/>
-        </Container>
+        <>
+            <NavBar/>
+            <Container>
+                <br/>
+                <div className="title">Tembusu College Interactive Map</div>
+                <Map location={location}
+                    changeLocation={changeLocation}/>
+                <br/>
+                <Tour location={location}
+                    changeLocation={changeLocation}/>
+                <Footer/>
+            </Container>
+
+        </>
     );
 }
 
