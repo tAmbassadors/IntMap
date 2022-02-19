@@ -10,6 +10,7 @@ import {
 import Map from "../Map";
 import Tour from "../Tour";
 import Footer from "../Footer"
+import "./IntMap.css";
 
 function IntMap() {
     const [location, setLocation] = useState("lobby");
@@ -18,9 +19,10 @@ function IntMap() {
     }
     return (
         <Container>
-            <div>Tembusu College Virtual Tour</div>
+            <div className="title">Tembusu College Interactive Map</div>
             <Map location={location}
                 changeLocation={changeLocation}/>
+            <br/>
             <Tour location={location}
                 changeLocation={changeLocation}/>
             <Footer/>
