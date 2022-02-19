@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useCallback} from "react";
+import React, {useState} from "react";
 import {Button, Row, Col} from "react-bootstrap";
 import "./Map.css";
 import Svg from "./Svg.js";

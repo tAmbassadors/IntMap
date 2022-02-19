@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
 import {
-    Button,
+    Navbar,
     Container,
     FormControl,
     Row,
@@ -10,8 +10,12 @@ import "./Footer.css";
 
 export default function Footer() {
     return (
-        <Container>
-            <h1>Footer</h1>
-        </Container>
+        <>
+            <Navbar className="footer">
+                <Container>
+                    <p>Made by Tembusu Ambassador</p>
+                </Container>
+            </Navbar>
+        </>
     );
 }

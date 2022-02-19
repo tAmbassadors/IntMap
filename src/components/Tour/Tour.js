@@ -1,11 +1,5 @@
 import React, {useEffect} from "react";
-import {
-    Button,
-    Container,
-    FormControl,
-    Row,
-    Col
-} from "react-bootstrap";
+import {Container, Row, Col} from "react-bootstrap";
 import "./Tour.css";
 import Svg from "./Svg.js";
 import {roomNames, roomDescriptions} from "./Description.js";
@@ -34,7 +28,7 @@ export default function Tour(props) {
     }, [location]);
 
     return (
-        <Container>
+        <Container className="tour-container">
             <Row>
                 <Col lg="8">
                     <div id="tour-div" className="img-container tour-div">

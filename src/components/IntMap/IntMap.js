@@ -29,9 +29,8 @@ function IntMap() {
                 <br/>
                 <Tour location={location}
                     changeLocation={changeLocation}/>
-                <Footer/>
             </Container>
-
+            <Footer/>
         </>
     );
 }
