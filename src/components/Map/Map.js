@@ -37,7 +37,7 @@ function Map(props) {
     }
     return (
         <div className="component-container">
-            <Row id="map-name" className="justify-content-center">Lobby</Row>
+            {/* <Row id="map-name" className="justify-content-center">Lobby</Row> */}
             <Row id="map-div" className="img-container bev-map-div justify-content-center">
                 <Col lg="6">
                     <Svg id="map-overlay"
@@ -48,6 +48,9 @@ function Map(props) {
             <Row>
                 <Col>
                     <Button className="btn-toggle" variant="outline-secondary"
+                        active={
+                            map === "Lobby"
+                        }
                         onClick={
                             () => {
                                 changeMap("Lobby");
@@ -56,6 +59,9 @@ function Map(props) {
                         Lobby
                     </Button>
                     <Button className="btn-toggle" variant="outline-secondary"
+                        active={
+                            map === "Lvl3"
+                        }
                         onClick={
                             () => {
                                 changeMap("Lvl3");
@@ -64,6 +70,9 @@ function Map(props) {
                         Level 3
                     </Button>
                     <Button className="btn-toggle" variant="outline-secondary"
+                        active={
+                            map === "Lvl17"
+                        }
                         onClick={
                             () => {
                                 changeMap("Lvl17");
@@ -72,6 +81,9 @@ function Map(props) {
                         Level 17
                     </Button>
                     <Button className="btn-toggle" variant="outline-secondary"
+                        active={
+                            map === "Learnlobe"
+                        }
                         onClick={
                             () => {
                                 changeMap("Learnlobe");
