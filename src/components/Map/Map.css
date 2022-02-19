@@ -1,9 +1,10 @@
 .btn-toggle {
   margin: 0px 2px;
+  font-size: clamp(14px, 3vw, 16px) !important;
 }
 
 .component-container {
-  margin: 20px 50px;
+  /* margin: 20px 50px; */
 }
 .img-container {
   position: relative;

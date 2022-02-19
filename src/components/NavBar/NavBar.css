@@ -4,6 +4,6 @@
 }
 
 .navbar-button {
-    padding: 1vh 2vw;
+    padding: 1vh 3vw;
     font-size: clamp(14px, 2vw, 16px);
 }

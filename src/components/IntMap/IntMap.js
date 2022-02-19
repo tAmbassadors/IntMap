@@ -22,7 +22,6 @@ function IntMap() {
         <>
             <NavBar/>
             <Container>
-                <br/>
                 <div className="title">Tembusu College Interactive Map</div>
                 <Map location={location}
                     changeLocation={changeLocation}/>

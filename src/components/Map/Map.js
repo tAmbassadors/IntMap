@@ -39,7 +39,13 @@ function Map(props) {
         <div className="component-container">
             {/* <Row id="map-name" className="justify-content-center">Lobby</Row> */}
             <Row id="map-div" className="img-container bev-map-div justify-content-center">
-                <Col lg="6">
+                <Col lg="6" xs="12"
+                    style={
+                        {
+                            paddingLeft: "0px",
+                            paddingRight: "0px"
+                        }
+                }>
                     <Svg id="map-overlay"
                         map={map}
                         changeLocation={changeLocation}/>
