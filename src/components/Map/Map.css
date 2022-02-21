@@ -49,7 +49,7 @@
 }
 
 #location-description {
-  font-size: clamp(14px, 4vw, 18px);
+  font-size: clamp(14px, 4vw, 15px);
   font-weight: 400;
   color: #3c5447;
 }
