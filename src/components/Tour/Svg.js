@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import { ToggleButtonGroup } from "react-bootstrap";
+import { isCursorAtStart } from "@testing-library/user-event/dist/utils";
 
 function Svg(props) {
   const { location, changeLocation } = props;
@@ -390,7 +391,7 @@ function Svg(props) {
       <OverlayTrigger
         placement="top"
         delay={{ show: 250, hide: 200 }}
-        overlay={<Tooltip>Exit Learnlobe</Tooltip>}
+        overlay={<Tooltip>Exit Learn Lobe</Tooltip>}
       >
         <polygon
           points="1155.83 1154.14 1218.81 1028.18 1155.83 1075.42 1092.86 1028.18 1155.83 1154.14"
@@ -709,6 +710,15 @@ function Svg(props) {
     </svg>
   );
 
+  const start = (
+    <svg
+      id="Layer_2"
+      data-name="Layer 2"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 6000 4000"
+    ></svg>
+  );
+
   const mph = (
     <svg
       id="Layer_2"
@@ -828,6 +838,8 @@ function Svg(props) {
             return pantry;
           case "blank-canvas":
             return blankCanvas;
+          case "start-page":
+            return start;
           default:
             return null;
         }
