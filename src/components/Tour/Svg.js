@@ -838,8 +838,10 @@ function Svg(props) {
             return pantry;
           case "blank-canvas":
             return blankCanvas;
-          case "start-page":
-            return start;
+            {
+              /* case "start-page":
+            return start; */
+            }
           default:
             return null;
         }

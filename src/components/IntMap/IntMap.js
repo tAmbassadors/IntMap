@@ -8,7 +8,7 @@ import NavBar from "../NavBar";
 import "./IntMap.css";
 
 function IntMap() {
-  const [location, setLocation] = useState("reading-room");
+  const [location, setLocation] = useState("lobby");
   function changeLocation(place) {
     setLocation(place);
   }
