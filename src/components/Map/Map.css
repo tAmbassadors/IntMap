@@ -43,13 +43,13 @@
   font-size: clamp(30px, 4vw, 40px);
   font-weight: 700;
   margin: 20px 0px;
-  color: #31473B;
+  color: #31473b;
 }
 
 #location-description {
-  font-size: clamp(14px, 4vw, 18px);
+  font-size: clamp(14px, 4vw, 15px);
   font-weight: 400;
-  color: #3C5447;
+  color: #3c5447;
 }
 
 #map-name {
