@@ -772,6 +772,22 @@ function Svg(props) {
     </svg>
   );
 
+  const startImage = (
+    <svg
+      id="Layer_2"
+      data-name="Layer 2"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 2450 1614"
+    >
+      <rect
+        width="2450"
+        height="1614"
+        style={{ fill: "rgb(255, 255, 255, 0)" }}
+        onClick={() => changeLocation("entrance")}
+      />
+    </svg>
+  );
+
   return (
     <div>
       {(() => {
@@ -828,6 +844,8 @@ function Svg(props) {
             return pantry;
           case "blank-canvas":
             return blankCanvas;
+          case "start-image":
+            return startImage;
           default:
             return null;
         }
