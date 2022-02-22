@@ -25,6 +25,7 @@ export const roomNames = {
   "room-1": "Room",
   pantry: "Pantry",
   laundry: "Laundry Room",
+  "start-image": "Explore Tembusu",
 };
 
 export const roomDescriptions = {
@@ -78,4 +79,6 @@ export const roomDescriptions = {
     "Every house in the College has their own pantry. You can conveniently pop in to prepare light meals, air-fry a snack or refrigerate your own food and drink items. ",
   laundry:
     "Located on Levels 9 and 17, the laundry rooms are well-equipped with both washing machines and dryers to ensure that every Tembusian has access to crisp and clean clothes! ",
+  "start-image":
+    "Welcome to Tembusu College, one of the Residential Colleges in University Town! Take a tour around our living and activity spaces and find out more about what we have to offer! For more detailed information, you can also visit our official Tembusu College website (link at the top right of the page) or our official Instagram page (@tembusucollege). We hope to see you around our College in the next academic year!",
 };

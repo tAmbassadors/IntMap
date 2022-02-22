@@ -783,7 +783,7 @@ function Svg(props) {
         width="2450"
         height="1614"
         style={{ fill: "rgb(255, 255, 255, 0)" }}
-        onClick={() => changeLocation("lobby")}
+        onClick={() => changeLocation("entrance")}
       />
     </svg>
   );
