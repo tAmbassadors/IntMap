@@ -21,10 +21,10 @@ export const roomNames = {
   mcl: "Master's Common Lounge",
   "level-lounge-1": "Level Lounge",
   corridor: "Corridor",
-  suite: "Suite",
+  suite: "Suite Common Area",
   "room-1": "Room",
   pantry: "Pantry",
-  laundry: "Laundry",
+  laundry: "Laundry Room",
 };
 
 export const roomDescriptions = {
