@@ -47,7 +47,7 @@ export const roomDescriptions = {
   launchpad:
     "Apart from being an exciting space for ideation, expression, education and everything in between, the Launchpad serves as a mini-studio for Tembusians to conduct photoshoots and creative works. The sky’s the limit!",
   entrance:
-    "Having exited the College through its main doors, you can head to other locations such as the Multi-Purpose Hall or our Learn Lobe to find out more about the student life and learning opportunities that we have here.",
+    "You can head into our residential building to find out more about our living spaces, or head to other locations such as the Multi-Purpose Hall or our Learn Lobe to find out more about the student life and learning opportunities that we have here.",
   "walkway-to-learnlobe":
     "The path here leads to our Learn Lobe, a two-storeyed building right beside our Residential Building. There are multiple Seminar Rooms in the building, and more excitingly, various themed rooms such as The Box Office, The Oasis, The Blank Canvas, Reading Room, The Abbey, and Launchpad!",
   "learnlobe-walkway-l1":
