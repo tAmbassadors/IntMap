@@ -296,7 +296,7 @@ function Svg(props) {
         overlay={<Tooltip>Learn Lobe L1</Tooltip>}
       >
         <polygon
-          points="1051.37 1157.61 1138.38 983.59 1051.37 1048.85 964.37 983.59 1051.37 1157.61"
+          points="1051.38 983.59 964.37 1157.61 1051.38 1092.35 1138.38 1157.61 1051.38 983.59"
           style={{ fill: "rgb(255, 255, 255, 0.6)" }}
           onClick={() => changeLocation("learnlobe-walkway-l1")}
         />
