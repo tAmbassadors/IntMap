@@ -253,7 +253,7 @@ function Svg(props) {
         overlay={<Tooltip>Learn Lobe Basement 1</Tooltip>}
       >
         <polygon
-          points="578.59 39.2 519.9 68.54 541.91 39.2 519.9 9.85 578.59 39.2"
+          points="578.59 288.2 519.9 317.54 541.91 288.2 519.9 258.85 578.59 288.2"
           style={{ fill: "rgb(255, 255, 255, 0.6)" }}
           onClick={() => changeLocation("learnlobe-walkway-B1")}
         />
@@ -654,7 +654,7 @@ function Svg(props) {
         overlay={<Tooltip>Common Lounge</Tooltip>}
       >
         <polygon
-          points="46.52 1460.81 244.38 1559.73 170.18 1460.81 244.38 1361.88 46.52 1460.81"
+          points="47.79 1202.54 217.73 1287.51 154 1202.54 217.73 1117.57 47.79 1202.54"
           style={{ fill: "rgb(255, 255, 255, 0.6)" }}
           onClick={() => changeLocation("common-lounge")}
         />

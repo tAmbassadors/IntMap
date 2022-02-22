@@ -1,106 +1,111 @@
-import React, {useState} from "react";
-import {Button, Row, Col} from "react-bootstrap";
+import React, { useState } from "react";
+import { Button, Row, Col } from "react-bootstrap";
 import "./Map.css";
 import Svg from "./Svg.js";
 
 function Map(props) {
-    const {location, changeLocation} = props;
+  const { location, changeLocation } = props;
 
-    // map's Lobby refers to the bird eye view map of Lobby
-    const [map, setMap] = useState("Lobby");
-    // let mapDiv = document.getElementById("map-div");
-    // let mapName = document.getElementById("map-name");
+  // map's Lobby refers to the bird eye view map of Lobby
+  const [map, setMap] = useState("Lobby");
+  // let mapDiv = document.getElementById("map-div");
+  // let mapName = document.getElementById("map-name");
 
-    // Function toggles the birds eye view map and the title of the map
-    // const changeMap = useCallback(() => {
-    // birdEyeViewMap.src = `${process.env.PUBLIC_URL}/assets/${location}.png`;
-    // const mapSvg = `${process.env.PUBLIC_URL}/assets/${location}_clickable.svg`;
-    // birdEyeViewSvg.data = mapSvg;
-    // mapName.innerText = location;
-    // }, [location, birdEyeViewMap, birdEyeViewSvg, mapName]);
+  // Function toggles the birds eye view map and the title of the map
+  // const changeMap = useCallback(() => {
+  // birdEyeViewMap.src = `${process.env.PUBLIC_URL}/assets/${location}.png`;
+  // const mapSvg = `${process.env.PUBLIC_URL}/assets/${location}_clickable.svg`;
+  // birdEyeViewSvg.data = mapSvg;
+  // mapName.innerText = location;
+  // }, [location, birdEyeViewMap, birdEyeViewSvg, mapName]);
 
-    // useEffect(() => {
-    // console.log("caled");
-    // changeMap();
-    // }, [changeMap]);
+  // useEffect(() => {
+  // console.log("caled");
+  // changeMap();
+  // }, [changeMap]);
 
-    function changeMap(place) {
-        setMap(place);
-        let mapDiv = document.getElementById("map-div");
-        let mapName = document.getElementById("map-name");
+  function changeMap(place) {
+    setMap(place);
+    let mapDiv = document.getElementById("map-div");
+    let mapName = document.getElementById("map-name");
 
-        mapDiv.style.backgroundImage = `url(${
-            process.env.PUBLIC_URL
-        }/assets/${place}.png)`;
-        console.log("called changeMap");
-        mapName.innerText = place;
+    mapDiv.style.backgroundImage = `url(${process.env.PUBLIC_URL}/assets/${place}.png)`;
+    console.log("called changeMap");
+    if (String(place) === "Lobby") {
+      changeLocation("lobby");
+    } else if (String(place) === "Lvl3") {
+      changeLocation("misty-garden");
+    } else if (String(place) === "Lvl17") {
+      changeLocation("corridor");
+    } else if (String(place) === "Learnlobe") {
+      changeLocation("learnlobe-walkway-l1");
     }
-    return (
-        <div className="component-container">
-            {/* <Row id="map-name" className="justify-content-center">Lobby</Row> */}
-            <Row id="map-div" className="img-container bev-map-div justify-content-center">
-                <Col lg="6" xs="12"
-                    style={
-                        {
-                            paddingLeft: "0px",
-                            paddingRight: "0px"
-                        }
-                }>
-                    <Svg id="map-overlay"
-                        map={map}
-                        changeLocation={changeLocation}/>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <Button className="btn-toggle" variant="outline-secondary"
-                        active={
-                            map === "Lobby"
-                        }
-                        onClick={
-                            () => {
-                                changeMap("Lobby");
-                            }
-                    }>
-                        Lobby
-                    </Button>
-                    <Button className="btn-toggle" variant="outline-secondary"
-                        active={
-                            map === "Lvl3"
-                        }
-                        onClick={
-                            () => {
-                                changeMap("Lvl3");
-                            }
-                    }>
-                        Level 3
-                    </Button>
-                    <Button className="btn-toggle" variant="outline-secondary"
-                        active={
-                            map === "Lvl17"
-                        }
-                        onClick={
-                            () => {
-                                changeMap("Lvl17");
-                            }
-                    }>
-                        Level 17
-                    </Button>
-                    <Button className="btn-toggle" variant="outline-secondary"
-                        active={
-                            map === "Learnlobe"
-                        }
-                        onClick={
-                            () => {
-                                changeMap("Learnlobe");
-                            }
-                    }>
-                        Learn Lobe
-                    </Button>
-                </Col>
-            </Row>
-        </div>
-    );
+    mapName.innerText = place;
+  }
+  return (
+    <div className="component-container">
+      {/* <Row id="map-name" className="justify-content-center">Lobby</Row> */}
+      <Row
+        id="map-div"
+        className="img-container bev-map-div justify-content-center"
+      >
+        <Col
+          lg="6"
+          xs="12"
+          style={{
+            paddingLeft: "0px",
+            paddingRight: "0px",
+          }}
+        >
+          <Svg id="map-overlay" map={map} changeLocation={changeLocation} />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Button
+            className="btn-toggle"
+            variant="outline-secondary"
+            active={map === "Lobby"}
+            onClick={() => {
+              changeMap("Lobby");
+            }}
+          >
+            Lobby
+          </Button>
+          <Button
+            className="btn-toggle"
+            variant="outline-secondary"
+            active={map === "Lvl3"}
+            onClick={() => {
+              changeMap("Lvl3");
+            }}
+          >
+            Level 3
+          </Button>
+          <Button
+            className="btn-toggle"
+            variant="outline-secondary"
+            active={map === "Lvl17"}
+            onClick={() => {
+              changeMap("Lvl17");
+            }}
+          >
+            Level 17
+          </Button>
+          <Button
+            className="btn-toggle"
+            variant="outline-secondary"
+            active={map === "Learnlobe"}
+            onClick={() => {
+              changeMap("Learnlobe");
+            }}
+          >
+            Learn Lobe
+          </Button>
+        </Col>
+      </Row>
+    </div>
+  );
 }
 
 export default Map;
