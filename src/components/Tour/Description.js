@@ -25,7 +25,6 @@ export const roomNames = {
   "room-1": "Room",
   pantry: "Pantry",
   laundry: "Laundry",
-  "start-page": "Explore Tembusu",
 };
 
 export const roomDescriptions = {
@@ -79,5 +78,4 @@ export const roomDescriptions = {
     "Every house in the College has their own pantry. You can conveniently pop in to prepare light meals, air-fry a snack or refrigerate your own food and drink items. ",
   laundry:
     "Located on Levels 9 and 17, the laundry rooms are well-equipped with both washing machines and dryers to ensure that every Tembusian has access to crisp and clean clothes! ",
-  "start-page": "Welcome to Tembusu College. Click to start the tour!",
 };
