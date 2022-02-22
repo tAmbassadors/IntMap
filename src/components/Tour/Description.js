@@ -6,7 +6,7 @@ export const roomNames = {
   abbey: "Abbey",
   "box-office": "Box Office",
   oasis: "Oasis",
-  "blank-canvas": "Blank Canvas / Makerspace",
+  "blank-canvas": "Blank Canvas",
   launchpad: "Launchpad",
   entrance: "Entrance",
   "walkway-to-learnlobe": "Walkway to Learn Lobe",
