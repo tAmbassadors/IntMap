@@ -13,7 +13,7 @@ function Svg(props) {
       id="Layer_2"
       data-name="Layer 2"
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1920 1080"
+      viewBox="0 0 2476.8 1651.2"
     >
       <OverlayTrigger
         placement="top"
@@ -21,7 +21,7 @@ function Svg(props) {
         overlay={<Tooltip>Learn Lobe Level 1</Tooltip>}
       >
         <polygon
-          points="1827.92 924.26 1625.74 1025.36 1701.56 924.26 1625.74 823.18 1827.92 924.26"
+          points="2378.39 1420.35 2067.55 1575.77 2184.12 1420.35 2067.55 1264.93 2378.39 1420.35"
           style={{ fill: "rgb(255, 255, 255, 0.6)" }}
           onClick={() => changeLocation("learnlobe-walkway-l1-2")}
         />
@@ -77,7 +77,7 @@ function Svg(props) {
       id="Layer_2"
       data-name="Layer 2"
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1920 1080"
+      viewBox="0 0 2476.8 1651.2"
     >
       <OverlayTrigger
         placement="top"
@@ -85,7 +85,7 @@ function Svg(props) {
         overlay={<Tooltip>Corridor</Tooltip>}
       >
         <polygon
-          points="698.09 1046.73 615.6 881.77 698.09 943.63 780.56 881.77 698.09 1046.73"
+          points="917.32 1576.89 771.02 1284.29 917.32 1394.02 1063.62 1284.29 917.32 1576.89"
           style={{ fill: "rgb(255, 255, 255, 0.6)" }}
           onClick={() => changeLocation("corridor")}
         />
@@ -98,7 +98,7 @@ function Svg(props) {
       id="Layer_2"
       data-name="Layer 2"
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1920 1080"
+      viewBox="0 0 2330.4 1553.7"
     >
       <OverlayTrigger
         placement="top"
@@ -106,7 +106,7 @@ function Svg(props) {
         overlay={<Tooltip>Learn Lobe Basement 1</Tooltip>}
       >
         <polygon
-          points="36.94 959.88 223.58 866.55 153.59 959.88 223.58 1053.2 36.94 959.88"
+          points="102.59 1340.21 361.83 1210.59 264.61 1340.21 361.83 1469.83 102.59 1340.21"
           style={{ fill: "rgb(255, 255, 255, 0.6)" }}
           onClick={() => changeLocation("learnlobe-walkway-B1-2")}
         />
@@ -182,7 +182,7 @@ function Svg(props) {
       id="Layer_2"
       data-name="Layer 2"
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1920 1080"
+      viewBox="0 0 2476.8 1651.2"
     >
       <OverlayTrigger
         placement="top"
@@ -190,7 +190,7 @@ function Svg(props) {
         overlay={<Tooltip>Learn Lobe Basement 1</Tooltip>}
       >
         <polygon
-          points="1860.31 954.81 1675.18 1047.38 1744.6 954.81 1675.18 862.25 1860.31 954.81"
+          points="2425.67 1434.68 2138.52 1578.25 2246.21 1434.68 2138.52 1291.11 2425.67 1434.68"
           style={{ fill: "rgb(255, 255, 255, 0.6)" }}
           onClick={() => changeLocation("learnlobe-walkway-B1-2")}
         />
@@ -756,7 +756,7 @@ function Svg(props) {
       id="Layer_1"
       data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1920 1080"
+      viewBox="0 0 8256 5504"
     >
       <OverlayTrigger
         placement="top"
@@ -764,7 +764,7 @@ function Svg(props) {
         overlay={<Tooltip>Back to Learn Lobe B1</Tooltip>}
       >
         <polygon
-          points="1484.34 1041.92 1383.25 839.74 1484.34 915.56 1585.43 839.74 1484.34 1041.92"
+          points="5820.36 5201.29 5391.71 4343.99 5820.36 4665.49 6249.01 4343.99 5820.36 5201.29"
           style={{ fill: "rgb(255, 255, 255, 0.6)" }}
           onClick={() => changeLocation("learnlobe-walkway-B1-2")}
         />
