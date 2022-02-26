@@ -28,13 +28,6 @@
   left: 0;
 }
 
-.map-overlay {
-  max-height: 400px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .description-container {
   margin: 1vh;
 }
@@ -55,4 +48,10 @@
 #map-name {
   font-size: clamp(18px, 4vw, 24px);
   font-weight: 500;
+}
+
+.img-container-col {
+  padding-left: 0px;
+  padding-right: 0px;
+  height: clamp(300px, 40vh, 400px);
 }
