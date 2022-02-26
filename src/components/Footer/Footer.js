@@ -1,11 +1,5 @@
-import React, {useEffect} from "react";
-import {
-    Navbar,
-    Container,
-    FormControl,
-    Row,
-    Col
-} from "react-bootstrap";
+import React from "react";
+import {Navbar, Container} from "react-bootstrap";
 import "./Footer.css";
 
 export default function Footer() {
