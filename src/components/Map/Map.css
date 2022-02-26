@@ -3,6 +3,17 @@
   font-size: clamp(14px, 3vw, 16px) !important;
 }
 
+.btn-toggle-restart {
+  margin: 0px 2px;
+  font-size: clamp(14px, 3vw, 16px) !important;
+}
+
+.vert-line {
+  border-left: 0.6px solid rgb(119, 119, 119);
+  height: 400px;
+  margin: 0px 20px;
+}
+
 .component-container {
   /* margin: 20px 50px; */
 }

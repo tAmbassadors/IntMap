@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import "./Tour.css";
 import Svg from "./Svg.js";
 import { roomNames, roomDescriptions } from "./Description.js";
@@ -58,6 +58,16 @@ export default function Tour(props) {
               changeLocation={changeLocation}
             />
           </div>
+          <Button
+            className="btn-toggle-restart"
+            variant="outline-secondary"
+            onClick={() => {
+              window.location.reload(false);
+              //changeLocation("start-image");
+            }}
+          >
+            Restart Tour
+          </Button>
         </Col>
         <Col className="description-container">
           <p id="location-name">lobby</p>
