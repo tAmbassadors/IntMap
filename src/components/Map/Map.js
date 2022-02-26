@@ -65,17 +65,6 @@ function Map(props) {
           >
             Learn Lobe
           </Button>
-          {/* <line className="vert-line" />
-          <Button
-            className="btn-toggle-restart"
-            variant="outline-secondary"
-            active={map === "Home"}
-            onClick={() => {
-              window.location.reload(false);
-            }}
-          >
-            Restart Tour
-          </Button> */}
         </Col>
       </Row>
     </div>
