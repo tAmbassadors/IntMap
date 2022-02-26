@@ -5,7 +5,7 @@ import Svg from "./Svg.js";
 import { roomNames, roomDescriptions } from "./Description.js";
 
 export default function Tour(props) {
-  const { location, changeLocation } = props;
+  const { location, changeLocation, changeMap, reset } = props;
   console.log(location);
 
   useEffect(() => {
@@ -62,8 +62,7 @@ export default function Tour(props) {
             className="btn-toggle-restart"
             variant="outline-secondary"
             onClick={() => {
-              window.location.reload(false);
-              //changeLocation("start-image");
+              reset();
             }}
           >
             Restart Tour
