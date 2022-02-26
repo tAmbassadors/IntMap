@@ -1,4 +1,5 @@
 import "./Tour.css";
+import changeMap from "../Map/Map.js";
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";

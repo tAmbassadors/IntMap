@@ -18,3 +18,8 @@ Rect,
 Polygon {
   cursor: pointer;
 }
+
+.btn-toggle-restart {
+  margin: 20px 2px;
+  font-size: clamp(14px, 3vw, 16px) !important;
+}
