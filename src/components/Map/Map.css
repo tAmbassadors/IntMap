@@ -64,7 +64,7 @@
 .img-container-col {
   padding-left: 0px;
   padding-right: 0px;
-  height: clamp(300px, 60vh, 400px);
+  height: clamp(300px, 40vh, 400px);
   position: relative;
 }
 
@@ -75,4 +75,6 @@
   margin-right: -50%;
   transform: translate(-50%, -50%);
   height: 100%;
+  width: 100%;
+  /* border: 1px solid red; */
 }
