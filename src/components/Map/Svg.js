@@ -4,7 +4,7 @@ function Svg(props) {
   const { map, changeLocation } = props;
   const lobby = (
     <svg
-      id="Layer_2"
+      id="map-svg"
       data-name="Layer 2"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1643.28 841.92"
@@ -68,7 +68,7 @@ function Svg(props) {
   const lvl3 = (
     <>
       <svg
-        id="Layer_2"
+        id="map-svg"
         data-name="Layer 2"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 2068.08 1484.4"
@@ -89,7 +89,7 @@ function Svg(props) {
 
   const lvl17 = (
     <svg
-      id="Layer_2"
+      id="map-svg"
       data-name="Layer 2"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 2067.84 1484.4"
@@ -136,13 +136,13 @@ function Svg(props) {
 
   const learnlobe = (
     <svg
-      id="Layer_2"
+      id="map-svg"
       data-name="Layer 2"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1146.96 657.36"
     >
       <rect
-        x="83"
+        x="60"
         y="164.54"
         width="136"
         height="170"
@@ -150,7 +150,7 @@ function Svg(props) {
         onClick={() => changeLocation("abbey")}
       />
       <rect
-        x="285.81"
+        x="262.81"
         y="164.54"
         width="136"
         height="170"
@@ -158,7 +158,7 @@ function Svg(props) {
         onClick={() => changeLocation("blank-canvas")}
       />
       <rect
-        x="425.04"
+        x="402.04"
         y="164.54"
         width="136"
         height="170"
@@ -166,7 +166,7 @@ function Svg(props) {
         onClick={() => changeLocation("launchpad")}
       />
       <rect
-        x="803.04"
+        x="781.04"
         y="164.54"
         width="136"
         height="170"
@@ -174,7 +174,7 @@ function Svg(props) {
         onClick={() => changeLocation("oasis")}
       />
       <rect
-        x="942.94"
+        x="922.94"
         y="164.54"
         width="136"
         height="170"
@@ -182,7 +182,7 @@ function Svg(props) {
         onClick={() => changeLocation("box-office")}
       />
       <rect
-        x="942.94"
+        x="922.94"
         y="372.88"
         width="136"
         height="170"
@@ -190,7 +190,7 @@ function Svg(props) {
         onClick={() => changeLocation("sem-room")}
       />
       <rect
-        x="148.84"
+        x="124.84"
         y="374.23"
         width="273.93"
         height="170"

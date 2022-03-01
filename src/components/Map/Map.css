@@ -64,5 +64,15 @@
 .img-container-col {
   padding-left: 0px;
   padding-right: 0px;
-  height: clamp(300px, 40vh, 400px);
+  height: clamp(300px, 60vh, 400px);
+  position: relative;
+}
+
+#map-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
 }

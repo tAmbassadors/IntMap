@@ -15,6 +15,7 @@ function Map(props) {
         <Col
           lg="6"
           xs="12"
+          className="img-container-col"
           style={{
             paddingLeft: "0px",
             paddingRight: "0px",
