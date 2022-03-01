@@ -60,7 +60,8 @@ export default function Tour(props) {
           </div>
           <Button
             className="btn-toggle-restart"
-            variant="outline-secondary"
+            variant="outline-light"
+            style={{ backgroundColor: "#789F69" }}
             onClick={() => {
               reset();
             }}
