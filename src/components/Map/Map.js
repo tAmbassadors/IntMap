@@ -19,6 +19,7 @@ function Map(props) {
           style={{
             paddingLeft: "0px",
             paddingRight: "0px",
+            // border: "1px solid red",
           }}
         >
           <Svg id="map-overlay" map={map} changeLocation={changeLocation} />
