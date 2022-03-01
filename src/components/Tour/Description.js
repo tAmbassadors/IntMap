@@ -80,5 +80,5 @@ export const roomDescriptions = {
   laundry:
     "Located on Levels 9 and 17, the laundry rooms are well-equipped with both washing machines and dryers to ensure that every Tembusian has access to crisp and clean clothes! ",
   "start-image":
-    "Welcome to Tembusu College, one of the Residential Colleges in University Town! Take a tour around our living and activity spaces and find out more about what we have to offer! For more detailed information, you can also visit our official Tembusu College website (link at the top right of the page) or our official Instagram page (@tembusucollege). We hope to see you around our College in the next academic year!",
+    "Welcome to Tembusu College, one of the Residential Colleges in University Town! Take a tour around our living and activity spaces and find out more about what we have to offer! For more detailed information, you can also visit our official Tembusu College website (link at the top right of the page) or our official Instagram page (@tembusucollege). We hope to see you around our College in the next academic year! \n\n We recommend viewing on desktop for the best user experience.",
 };
