@@ -272,7 +272,7 @@ function Svg(props) {
       <OverlayTrigger
         placement="top"
         delay={{ show: 250, hide: 200 }}
-        overlay={<Tooltip>Abbey</Tooltip>}
+        overlay={<Tooltip>The Abbey</Tooltip>}
       >
         <polygon
           points="1641.67 880.86 1467.66 793.85 1532.92 880.86 1467.66 967.87 1641.67 880.86"
